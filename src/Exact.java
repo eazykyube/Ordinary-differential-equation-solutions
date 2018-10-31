@@ -6,9 +6,9 @@ public class Exact {
 
     XYSeries series;
 
-    public Exact(String step, String x, String xf){
+    public Exact(Float step, Float x, Float xf){
         series = new XYSeries("Exact");
-        for(float i=Float.valueOf(x); i<Float.valueOf(xf); i+=Float.valueOf(step))
+        for(float i = x; i < xf; i += step)
             series.add(i, 2*i-1+Math.exp(-2*i));
     }
 }

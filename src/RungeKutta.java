@@ -7,22 +7,20 @@ public class RungeKutta {
     XYSeries series1;
     XYSeries series2;
 
-    public RungeKutta(String step, String x, String y, String xf){
+    public RungeKutta(Float step, Float x, Float y, Float xf){
         series1 = new XYSeries("Runge-Kutta's Method");
-        series1.add(Float.valueOf(x),Float.valueOf(y));
+        series1.add(x, y);
         series2 = new XYSeries("Runge-Kutta's Method Error");
-        series2.add(Float.valueOf(x),Float.valueOf(y));
-        float hf = Float.valueOf(y);
-        float shag = Float.valueOf(step);
+        series2.add(x, y);
         float k1, k2, k3, k4;
-        for(float i = Float.valueOf(x) + shag; i < Float.valueOf(xf); i+=shag){
-            k1 = -2*hf+4*(i-shag);
-            k2 = -2*(hf+shag*k1/2)+4*(i-shag/2);
-            k3 = -2*(hf+shag*k2/2)+4*(i-shag/2);
-            k4 = -2*(hf+shag*k3)+4*i;
-            series1.add(i, hf+shag/6*(k1+2*k2+2*k3+k4));
-            series2.add(i, Math.abs((2*i-1+Math.exp(-2*i))-(hf+shag/6*(k1+2*k2+2*k3+k4))));
-            hf += shag/6*(k1+2*k2+2*k3+k4);
+        for(float i = x+step; i < xf; i += step){
+            k1 = -2*y+4*(i-step);
+            k2 = -2*(y+step*k1/2)+4*(i-step/2);
+            k3 = -2*(y+step*k2/2)+4*(i-step/2);
+            k4 = -2*(y+step*k3)+4*i;
+            series1.add(i, y+step/6*(k1+2*k2+2*k3+k4));
+            series2.add(i, Math.abs((2*i-1+Math.exp(-2*i))-(y+step/6*(k1+2*k2+2*k3+k4))));
+            y += step/6*(k1+2*k2+2*k3+k4);
         }
     }
 }

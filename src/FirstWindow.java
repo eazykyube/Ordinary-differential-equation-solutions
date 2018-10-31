@@ -4,6 +4,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class FirstWindow extends JFrame {
+
     private JTextField textFStep = new JTextField("");
     private JTextField textFX0 = new JTextField("");
     private JTextField textFY0 = new JTextField("");
@@ -16,12 +17,14 @@ public class FirstWindow extends JFrame {
     private JButton build = new JButton("Build");
 
     public FirstWindow(){
+
         super("FirstWindow");
         this.setBounds(100, 100, 250, 200);
         this.setLocationRelativeTo(null);
         this.setResizable(false);
         this.setTitle("Project");
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        this.getRootPane().setDefaultButton(build);
 
         Container container = this.getContentPane();
         container.setLayout(new GridLayout(5, 2, 2,2));
@@ -34,8 +37,8 @@ public class FirstWindow extends JFrame {
         container.add(labelXFinal);
         container.add(textFXFinal);
         container.add(empty);
-        this.getRootPane().setDefaultButton(build);
         container.add(build, BorderLayout.SOUTH);
+
         build.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -64,7 +67,6 @@ public class FirstWindow extends JFrame {
     }
 
     public void delete(){
-        this.setVisible(false);
         this.dispose();
     }
 }

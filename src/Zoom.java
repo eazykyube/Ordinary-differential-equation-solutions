@@ -1,5 +1,4 @@
 import org.jfree.chart.ChartPanel;
-
 import javax.swing.*;
 import java.awt.event.MouseWheelEvent;
 import java.awt.event.MouseWheelListener;
@@ -19,6 +18,7 @@ public class Zoom {
             }
         });
     }
+
     public synchronized void increaseZoom(JComponent chart, boolean saveAction){
         ChartPanel ch = (ChartPanel)chart;
         zoomChartAxis(ch, true);
