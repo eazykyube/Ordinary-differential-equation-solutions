@@ -83,7 +83,8 @@ public class Graphs extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
                 //Simply shows some information:
-                String message = "Equation: y'=-2y+4x\nExact solution: y=2x-1+e^(-2x)\n";
+                String message = "Equation: y'=-2y+4x\nExact solution: y=(2xe^(2x)-e^(2x)+C)*e^(-2x),\n" +
+                        "where C=y0e^(2x0)-2x0e^(2x0)+e^(2x0)";
                 JOptionPane.showMessageDialog(null, message, "INFO", JOptionPane.PLAIN_MESSAGE);
             }
         });

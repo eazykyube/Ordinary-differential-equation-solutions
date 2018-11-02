@@ -23,7 +23,9 @@ public class RungeKutta implements InterfaceMethods {
             k3 = -2*(y+step*k2/2)+4*(i-step/2);
             k4 = -2*(y+step*k3)+4*i;
             series1.add(i, y+step/6*(k1+2*k2+2*k3+k4));
-            series2.add(i, Math.abs((2*i-1+Math.exp(-2*i))-(y+step/6*(k1+2*k2+2*k3+k4))));
+            series2.add(i, Math.abs((2*i*Math.exp(2*i)-Math.exp(2*i)+(y*Math.exp(2*x)
+                    -2*x*Math.exp(2*x)+Math.exp(2*x)))/Math.exp(2*i)-
+                    (y+step/6*(k1+2*k2+2*k3+k4))));
             y += step/6*(k1+2*k2+2*k3+k4);
         }
     }

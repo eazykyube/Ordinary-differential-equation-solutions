@@ -18,7 +18,9 @@ public class ImprovedEuler implements InterfaceMethods {
         series2.add(x, y);
         for(float i = x+step; i < xf; i += step){
             series1.add(i, y+step*(-2*(y+step/2*(-2*y+4*(i-step)))+4*(i-step/2)));
-            series2.add(i, Math.abs((2*i-1+Math.exp(-2*i))-(y+step*(-2*(y+step/2*(-2*y+4*(i-step)))+4*(i-step/2)))));
+            series2.add(i, Math.abs((2*i*Math.exp(2*i)-Math.exp(2*i)+(y*Math.exp(2*x)
+                    -2*x*Math.exp(2*x)+Math.exp(2*x)))/Math.exp(2*i)-
+                    (y+step*(-2*(y+step/2*(-2*y+4*(i-step)))+4*(i-step/2)))));
             y += step*(-2*(y+step/2*(-2*y+4*(i-step)))+4*(i-step/2));
         }
     }

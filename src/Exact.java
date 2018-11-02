@@ -11,6 +11,7 @@ public class Exact implements InterfaceMethods {
         //Calculating points that satisfy to Exact solution and adding them to the series:
         series1 = new XYSeries("Exact");
         for(float i = x; i < xf; i += step)
-            series1.add(i, 2*i-1+Math.exp(-2*i));
+            series1.add(i, (2*i*Math.exp(2*i)-Math.exp(2*i)+(y*Math.exp(2*x)
+                    -2*x*Math.exp(2*x)+Math.exp(2*x)))/Math.exp(2*i));
     }
 }
