@@ -1,13 +1,13 @@
-import org.jfree.data.xy.XYDataset;
 import org.jfree.data.xy.XYSeries;
-import org.jfree.data.xy.XYSeriesCollection;
 
-public class RungeKutta {
+public class RungeKutta implements InterfaceMethods {
+
+    public RungeKutta(){}
 
     XYSeries series1;
     XYSeries series2;
 
-    public RungeKutta(Float step, Float x, Float y, Float xf){
+    public void funct(Float step, Float x, Float y, Float xf){
         series1 = new XYSeries("Runge-Kutta's Method");
         series1.add(x, y);
         series2 = new XYSeries("Runge-Kutta's Method Error");

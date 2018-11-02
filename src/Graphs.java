@@ -12,6 +12,8 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.MouseWheelEvent;
 import java.awt.event.MouseWheelListener;
+import java.util.ArrayList;
+import java.util.LinkedList;
 
 public class Graphs extends JFrame {
 
@@ -29,44 +31,40 @@ public class Graphs extends JFrame {
         graphs.setResizable(false);
         graphs.setDefaultCloseOperation(EXIT_ON_CLOSE);
         graphs.setVisible(true);
-
-        Euler euler = new Euler(Float.valueOf(step), Float.valueOf(x), Float.valueOf(y), Float.valueOf(xf));
-        ImprovedEuler improvedEuler = new ImprovedEuler(Float.valueOf(step), Float.valueOf(x), Float.valueOf(y), Float.valueOf(xf));
-        RungeKutta rungeKutta = new RungeKutta(Float.valueOf(step), Float.valueOf(x), Float.valueOf(y), Float.valueOf(xf));
-        Exact exact = new Exact(Float.valueOf(step), Float.valueOf(x), Float.valueOf(xf));
-
-        XYSeriesCollection dataset1 = new XYSeriesCollection();
-        dataset1.addSeries(euler.series1);
-        dataset1.addSeries(improvedEuler.series1);
-        dataset1.addSeries(rungeKutta.series1);
-        dataset1.addSeries(exact.series);
-        JFreeChart chart1 = ChartFactory
-                .createXYLineChart("Methods", "x", "y",
-                        dataset1,
-                        PlotOrientation.VERTICAL,
-                        true, true, true);
-
-        XYSeriesCollection dataset2 = new XYSeriesCollection();
-        dataset2.addSeries(euler.series2);
-        dataset2.addSeries(improvedEuler.series2);
-        dataset2.addSeries(rungeKutta.series2);
-        JFreeChart chart2 = ChartFactory
-                .createXYLineChart("Errors", "x", "y",
-                        dataset2,
-                        PlotOrientation.VERTICAL,
-                        true, true, true);
-
         Container container = graphs.getContentPane();
-        Zoom zoom = new Zoom();
         container.setLayout(new FlowLayout());
-        chartPanel1 = new ChartPanel(chart1);
-        zoom.addListener(chartPanel1);
-        chartPanel1.setSize(new Dimension(500, 220));
-        container.add(chartPanel1);
-        chartPanel2 = new ChartPanel(chart2);
-        zoom.addListener(chartPanel2);
-        chartPanel2.setSize(new Dimension(500, 220));
-        container.add(chartPanel2);
+
+        Euler euler = new Euler();
+        euler.funct(Float.valueOf(step), Float.valueOf(x), Float.valueOf(y), Float.valueOf(xf));
+        System.out.print(euler.series1.getKey());
+        ImprovedEuler improvedEuler = new ImprovedEuler();
+        improvedEuler.funct(Float.valueOf(step), Float.valueOf(x), Float.valueOf(y), Float.valueOf(xf));
+        RungeKutta rungeKutta = new RungeKutta();
+        rungeKutta.funct(Float.valueOf(step), Float.valueOf(x), Float.valueOf(y), Float.valueOf(xf));
+        Exact exact = new Exact();
+        exact.funct(Float.valueOf(step), Float.valueOf(x), Float.valueOf(y), Float.valueOf(xf));
+
+        LinkedList<XYSeries> linkedListMethods = new LinkedList();
+        linkedListMethods.addLast(euler.series1);
+        linkedListMethods.addLast(improvedEuler.series1);
+        linkedListMethods.addLast(rungeKutta.series1);
+        linkedListMethods.addLast(exact.series1);
+
+        Chart chartMethods = new Chart();
+        chartMethods.createChart(linkedListMethods, "Methods");
+
+        container.add(chartMethods.chartPanel);
+
+        LinkedList<XYSeries> linkedListErrors = new LinkedList();
+        linkedListErrors.addLast(euler.series2);
+        linkedListErrors.addLast(improvedEuler.series2);
+        linkedListErrors.addLast(rungeKutta.series2);
+
+        Chart chartErrors = new Chart();
+        chartErrors.createChart(linkedListErrors, "Errors");
+
+        container.add(chartErrors.chartPanel);
+
         back.setPreferredSize(new Dimension(200, 20));
         container.add(back);
         help.setPreferredSize(new Dimension(120, 20));

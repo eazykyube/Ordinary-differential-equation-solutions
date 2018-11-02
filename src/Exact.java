@@ -1,14 +1,15 @@
-import org.jfree.data.xy.XYDataset;
 import org.jfree.data.xy.XYSeries;
-import org.jfree.data.xy.XYSeriesCollection;
 
-public class Exact {
+public class Exact implements InterfaceMethods {
 
-    XYSeries series;
+    public Exact(){}
 
-    public Exact(Float step, Float x, Float xf){
-        series = new XYSeries("Exact");
+    XYSeries series1;
+    XYSeries series2;
+
+    public void funct(Float step, Float x, Float y, Float xf){
+        series1 = new XYSeries("Exact");
         for(float i = x; i < xf; i += step)
-            series.add(i, 2*i-1+Math.exp(-2*i));
+            series1.add(i, 2*i-1+Math.exp(-2*i));
     }
 }

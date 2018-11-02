@@ -43,7 +43,8 @@ public class FirstWindow extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
                 String message = "OK";
-                if (textFStep.getText().equals("") | textFX0.getText().equals("") | textFY0.getText().equals("") | textFXFinal.getText().equals("")){
+                if (textFStep.getText().equals("") | textFX0.getText().equals("") | textFY0.getText().equals("") |
+                        textFXFinal.getText().equals("")){
                     message = "Please, enter all required data";
                     JOptionPane.showMessageDialog(null, message, "ERROR", JOptionPane.PLAIN_MESSAGE);
                 }
@@ -58,7 +59,8 @@ public class FirstWindow extends JFrame {
                         JOptionPane.showMessageDialog(null, message, "ERROR", JOptionPane.PLAIN_MESSAGE);
                     }
                     if(message.equals("OK")){
-                        Graphs graphs = new Graphs(textFStep.getText(), textFX0.getText(), textFY0.getText(), textFXFinal.getText());
+                        Graphs graphs = new Graphs(textFStep.getText(), textFX0.getText(), textFY0.getText(),
+                                textFXFinal.getText());
                         delete();
                     }
                 }

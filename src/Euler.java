@@ -1,17 +1,13 @@
-import org.jfree.chart.ChartFactory;
-import org.jfree.chart.JFreeChart;
-import org.jfree.chart.plot.PlotOrientation;
-import org.jfree.data.xy.XYDataset;
 import org.jfree.data.xy.XYSeries;
-import org.jfree.data.xy.XYSeriesCollection;
 
+public class Euler implements InterfaceMethods {
 
-public class Euler {
+    public Euler(){}
 
     XYSeries series1;
     XYSeries series2;
 
-    public Euler(Float step, Float x, Float y, Float xf){
+    public void funct(Float step, Float x, Float y, Float xf){
         series1 = new XYSeries("Euler's Method");
         series1.add(x, y);
         series2 = new XYSeries("Euler's Method Error");
