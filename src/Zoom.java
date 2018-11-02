@@ -7,6 +7,7 @@ public class Zoom {
 
     public Zoom(){}
 
+    //Function that works when mouse wheel makes an action:
     public void addListener(ChartPanel chartPanel) {
         chartPanel.addMouseWheelListener(new MouseWheelListener() {
             public void mouseWheelMoved(MouseWheelEvent e) {
@@ -19,16 +20,19 @@ public class Zoom {
         });
     }
 
+    //Function for increasing zoom:
     public synchronized void increaseZoom(JComponent chart, boolean saveAction){
         ChartPanel ch = (ChartPanel)chart;
         zoomChartAxis(ch, true);
     }
 
+    //Function for decreasing zoom:
     public synchronized void decreaseZoom(JComponent chart, boolean saveAction){
         ChartPanel ch = (ChartPanel)chart;
         zoomChartAxis(ch, false);
     }
 
+    //Function used by two previous functions:
     private void zoomChartAxis(ChartPanel chartP, boolean increase){
         int width = chartP.getMaximumDrawWidth() - chartP.getMinimumDrawWidth();
         int height = chartP.getMaximumDrawHeight() - chartP.getMinimumDrawWidth();

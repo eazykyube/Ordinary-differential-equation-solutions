@@ -2,25 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="39568e5c-a326-4313-a68e-b9c674270c90" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/Chart.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/InterfaceMethods.java" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/out/production/ass/Euler.class" afterPath="$PROJECT_DIR$/out/production/ass/Euler.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/ass/Exact.class" afterPath="$PROJECT_DIR$/out/production/ass/Exact.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/ass/FirstWindow$1.class" afterPath="$PROJECT_DIR$/out/production/ass/FirstWindow$1.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/ass/FirstWindow.class" afterPath="$PROJECT_DIR$/out/production/ass/FirstWindow.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/ass/Graphs$1.class" afterPath="$PROJECT_DIR$/out/production/ass/Graphs$1.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/ass/Graphs$2.class" afterPath="$PROJECT_DIR$/out/production/ass/Graphs$2.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/ass/Graphs.class" afterPath="$PROJECT_DIR$/out/production/ass/Graphs.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/ass/ImprovedEuler.class" afterPath="$PROJECT_DIR$/out/production/ass/ImprovedEuler.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/ass/RungeKutta.class" afterPath="$PROJECT_DIR$/out/production/ass/RungeKutta.class" />
+      <change beforePath="$PROJECT_DIR$/src/Chart.java" afterPath="$PROJECT_DIR$/src/Chart.java" />
       <change beforePath="$PROJECT_DIR$/src/Euler.java" afterPath="$PROJECT_DIR$/src/Euler.java" />
       <change beforePath="$PROJECT_DIR$/src/Exact.java" afterPath="$PROJECT_DIR$/src/Exact.java" />
       <change beforePath="$PROJECT_DIR$/src/FirstWindow.java" afterPath="$PROJECT_DIR$/src/FirstWindow.java" />
       <change beforePath="$PROJECT_DIR$/src/Graphs.java" afterPath="$PROJECT_DIR$/src/Graphs.java" />
       <change beforePath="$PROJECT_DIR$/src/ImprovedEuler.java" afterPath="$PROJECT_DIR$/src/ImprovedEuler.java" />
+      <change beforePath="$PROJECT_DIR$/src/InterfaceMethods.java" afterPath="$PROJECT_DIR$/src/InterfaceMethods.java" />
       <change beforePath="$PROJECT_DIR$/src/RungeKutta.java" afterPath="$PROJECT_DIR$/src/RungeKutta.java" />
+      <change beforePath="$PROJECT_DIR$/src/Zoom.java" afterPath="$PROJECT_DIR$/src/Zoom.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -35,12 +26,12 @@
       <file leaf-file-name="FirstWindow.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/FirstWindow.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="20" column="29" lean-forward="false" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
+            <state relative-caret-position="122">
+              <caret line="66" column="49" lean-forward="true" selection-start-line="66" selection-start-column="49" selection-end-line="66" selection-end-column="49" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2862#2863#0" expanded="true" />
-                <element signature="e#2892#2893#0" expanded="true" />
+                <element signature="e#3431#3432#0" expanded="true" />
+                <element signature="e#3461#3462#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -49,8 +40,8 @@
       <file leaf-file-name="Graphs.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Graphs.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="244">
-              <caret line="53" column="52" lean-forward="true" selection-start-line="53" selection-start-column="52" selection-end-line="53" selection-end-column="52" />
+            <state relative-caret-position="513">
+              <caret line="19" column="20" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -58,11 +49,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Chart.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Chart.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Chart.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="433">
-              <caret line="27" column="17" lean-forward="true" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
+            <state relative-caret-position="135">
+              <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -73,9 +64,11 @@
       <file leaf-file-name="Zoom.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Zoom.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="34" lean-forward="false" selection-start-line="0" selection-start-column="34" selection-end-line="0" selection-end-column="34" />
-              <folding />
+            <state relative-caret-position="82">
+              <caret line="9" column="48" lean-forward="false" selection-start-line="9" selection-start-column="48" selection-end-line="9" selection-end-column="48" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -83,8 +76,8 @@
       <file leaf-file-name="Exact.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Exact.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="10" column="31" lean-forward="true" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
+            <state relative-caret-position="189">
+              <caret line="7" column="21" lean-forward="true" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -93,8 +86,8 @@
       <file leaf-file-name="Euler.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Euler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="12" column="31" lean-forward="true" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
+            <state relative-caret-position="162">
+              <caret line="6" column="13" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -104,7 +97,7 @@
         <entry file="file://$PROJECT_DIR$/src/ImprovedEuler.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="270">
-              <caret line="12" column="31" lean-forward="true" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
+              <caret line="12" column="8" lean-forward="false" selection-start-line="12" selection-start-column="8" selection-end-line="13" selection-end-column="98" />
               <folding />
             </state>
           </provider>
@@ -113,18 +106,18 @@
       <file leaf-file-name="RungeKutta.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/RungeKutta.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="6" column="4" lean-forward="false" selection-start-line="6" selection-start-column="4" selection-end-line="7" selection-end-column="21" />
+            <state relative-caret-position="271">
+              <caret line="13" column="48" lean-forward="false" selection-start-line="13" selection-start-column="48" selection-end-line="13" selection-end-column="48" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="InterfaceMethods.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="InterfaceMethods.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/InterfaceMethods.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
-              <caret line="2" column="35" lean-forward="false" selection-start-line="2" selection-start-column="35" selection-end-line="2" selection-end-column="35" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -152,17 +145,17 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/Main.java" />
-        <option value="$PROJECT_DIR$/src/Zoom.java" />
-        <option value="$PROJECT_DIR$/src/FirstWindow.java" />
         <option value="$PROJECT_DIR$/src/Interface.java" />
         <option value="$PROJECT_DIR$/src/InterfaceCharts.java" />
-        <option value="$PROJECT_DIR$/src/InterfaceMethods.java" />
-        <option value="$PROJECT_DIR$/src/RungeKutta.java" />
-        <option value="$PROJECT_DIR$/src/ImprovedEuler.java" />
-        <option value="$PROJECT_DIR$/src/Euler.java" />
-        <option value="$PROJECT_DIR$/src/Exact.java" />
-        <option value="$PROJECT_DIR$/src/Chart.java" />
+        <option value="$PROJECT_DIR$/src/FirstWindow.java" />
         <option value="$PROJECT_DIR$/src/Graphs.java" />
+        <option value="$PROJECT_DIR$/src/Chart.java" />
+        <option value="$PROJECT_DIR$/src/Zoom.java" />
+        <option value="$PROJECT_DIR$/src/Euler.java" />
+        <option value="$PROJECT_DIR$/src/ImprovedEuler.java" />
+        <option value="$PROJECT_DIR$/src/RungeKutta.java" />
+        <option value="$PROJECT_DIR$/src/Exact.java" />
+        <option value="$PROJECT_DIR$/src/InterfaceMethods.java" />
       </list>
     </option>
   </component>
@@ -297,7 +290,7 @@
       <workItem from="1541047569040" duration="2403000" />
       <workItem from="1541057334989" duration="1244000" />
       <workItem from="1541108484588" duration="3258000" />
-      <workItem from="1541111782670" duration="2277000" />
+      <workItem from="1541111782670" duration="6162000" />
     </task>
     <task id="LOCAL-00001" summary="First try">
       <created>1540899582754</created>
@@ -320,11 +313,18 @@
       <option name="project" value="LOCAL" />
       <updated>1540995125049</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Last changes">
+      <created>1541154649508</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1541154649509</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="68285000" />
+    <option name="totallyTimeSpent" value="72170000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
@@ -398,7 +398,8 @@
     <MESSAGE value="First try" />
     <MESSAGE value="Zoom" />
     <MESSAGE value="Structured" />
-    <option name="LAST_COMMIT_MESSAGE" value="Structured" />
+    <MESSAGE value="Last changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Last changes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -419,7 +420,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="34" lean-forward="false" selection-start-line="0" selection-start-column="34" selection-end-line="0" selection-end-column="34" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -461,8 +464,8 @@
           <caret line="45" column="45" lean-forward="true" selection-start-line="45" selection-start-column="45" selection-end-line="45" selection-end-column="45" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2862#2863#0" expanded="true" />
-            <element signature="e#2892#2893#0" expanded="true" />
+            <element signature="e#3431#3432#0" expanded="true" />
+            <element signature="e#3461#3462#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -481,8 +484,8 @@
           <caret line="44" column="101" lean-forward="true" selection-start-line="43" selection-start-column="20" selection-end-line="44" selection-end-column="101" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2862#2863#0" expanded="true" />
-            <element signature="e#2892#2893#0" expanded="true" />
+            <element signature="e#3431#3432#0" expanded="true" />
+            <element signature="e#3461#3462#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -491,7 +494,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
           <caret line="21" column="52" lean-forward="false" selection-start-line="21" selection-start-column="52" selection-end-line="21" selection-end-column="52" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -551,8 +556,8 @@
           <caret line="42" column="61" lean-forward="false" selection-start-line="42" selection-start-column="61" selection-end-line="42" selection-end-column="61" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2862#2863#0" expanded="true" />
-            <element signature="e#2892#2893#0" expanded="true" />
+            <element signature="e#3431#3432#0" expanded="true" />
+            <element signature="e#3461#3462#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -561,7 +566,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
           <caret line="21" column="52" lean-forward="false" selection-start-line="21" selection-start-column="52" selection-end-line="21" selection-end-column="52" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -621,8 +628,8 @@
           <caret line="21" column="24" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2862#2863#0" expanded="true" />
-            <element signature="e#2892#2893#0" expanded="true" />
+            <element signature="e#3431#3432#0" expanded="true" />
+            <element signature="e#3461#3462#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -683,8 +690,8 @@
           <caret line="26" column="41" lean-forward="false" selection-start-line="26" selection-start-column="41" selection-end-line="26" selection-end-column="41" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2862#2863#0" expanded="true" />
-            <element signature="e#2892#2893#0" expanded="true" />
+            <element signature="e#3431#3432#0" expanded="true" />
+            <element signature="e#3461#3462#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -737,8 +744,8 @@
           <caret line="36" column="51" lean-forward="false" selection-start-line="36" selection-start-column="51" selection-end-line="36" selection-end-column="51" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2862#2863#0" expanded="true" />
-            <element signature="e#2892#2893#0" expanded="true" />
+            <element signature="e#3431#3432#0" expanded="true" />
+            <element signature="e#3461#3462#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -762,18 +769,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/InterfaceCharts.java" />
-    <entry file="file://$PROJECT_DIR$/src/FirstWindow.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="20" column="29" lean-forward="false" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2862#2863#0" expanded="true" />
-            <element signature="e#2892#2893#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk-10.0.2/lib/src.zip!/java.base/java/util/LinkedList.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="27">
@@ -782,18 +777,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/RungeKutta.java">
+    <entry file="file://$PROJECT_DIR$/src/FirstWindow.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="4" lean-forward="false" selection-start-line="6" selection-start-column="4" selection-end-line="7" selection-end-column="21" />
-          <folding />
+        <state relative-caret-position="122">
+          <caret line="66" column="49" lean-forward="true" selection-start-line="66" selection-start-column="49" selection-end-line="66" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3431#3432#0" expanded="true" />
+            <element signature="e#3461#3462#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/InterfaceMethods.java">
+    <entry file="file://$PROJECT_DIR$/src/RungeKutta.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="2" column="35" lean-forward="false" selection-start-line="2" selection-start-column="35" selection-end-line="2" selection-end-column="35" />
+        <state relative-caret-position="271">
+          <caret line="13" column="48" lean-forward="false" selection-start-line="13" selection-start-column="48" selection-end-line="13" selection-end-column="48" />
           <folding />
         </state>
       </provider>
@@ -801,39 +800,41 @@
     <entry file="file://$PROJECT_DIR$/src/ImprovedEuler.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
-          <caret line="12" column="31" lean-forward="true" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
+          <caret line="12" column="8" lean-forward="false" selection-start-line="12" selection-start-column="8" selection-end-line="13" selection-end-column="98" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Euler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="12" column="31" lean-forward="true" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
+        <state relative-caret-position="162">
+          <caret line="6" column="13" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Exact.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="10" column="31" lean-forward="true" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
+        <state relative-caret-position="189">
+          <caret line="7" column="21" lean-forward="true" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Zoom.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="34" lean-forward="false" selection-start-line="0" selection-start-column="34" selection-end-line="0" selection-end-column="34" />
-          <folding />
+        <state relative-caret-position="82">
+          <caret line="9" column="48" lean-forward="false" selection-start-line="9" selection-start-column="48" selection-end-line="9" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Graphs.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret line="53" column="52" lean-forward="true" selection-start-line="53" selection-start-column="52" selection-end-line="53" selection-end-column="52" />
+        <state relative-caret-position="513">
+          <caret line="19" column="20" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -842,11 +843,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Chart.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="433">
-          <caret line="27" column="17" lean-forward="true" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
+        <state relative-caret-position="135">
+          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/InterfaceMethods.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

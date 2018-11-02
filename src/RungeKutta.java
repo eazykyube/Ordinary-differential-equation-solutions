@@ -4,10 +4,14 @@ public class RungeKutta implements InterfaceMethods {
 
     public RungeKutta(){}
 
+    //Series of method
     XYSeries series1;
+    //Series of method's error
     XYSeries series2;
 
     public void funct(Float step, Float x, Float y, Float xf){
+        //Calculating points that satisfy to Runge-Kutta's Method and adding them to the series1
+        //and points that satisfy to Runge-Kutta's Method error and adding them to the series2:
         series1 = new XYSeries("Runge-Kutta's Method");
         series1.add(x, y);
         series2 = new XYSeries("Runge-Kutta's Method Error");

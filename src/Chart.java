@@ -17,15 +17,19 @@ public class Chart{
     public Chart(){}
 
     public void createChart(LinkedList<XYSeries> linkedList, String title){
+        //Adding each series of points into the series collection:
         dataset = new XYSeriesCollection();
         while(linkedList.isEmpty()==false)
             dataset.addSeries(linkedList.pop());
+        //Creating chart using series collection:
         chart = ChartFactory
                 .createXYLineChart(title, "x", "y",
                         dataset,
                         PlotOrientation.VERTICAL,
                         true, true, true);
+        //Creating chart panel using chart;
         chartPanel = new ChartPanel(chart);
+        //Tuning chart panel settings:
         Zoom zoom = new Zoom();
         zoom.addListener(chartPanel);
         chartPanel.setSize(new Dimension(500, 220));

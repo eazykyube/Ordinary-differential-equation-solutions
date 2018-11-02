@@ -4,10 +4,14 @@ public class Euler implements InterfaceMethods {
 
     public Euler(){}
 
+    //Series of method
     XYSeries series1;
+    //Series of method's error
     XYSeries series2;
 
     public void funct(Float step, Float x, Float y, Float xf){
+        //Calculating points that satisfy to Euler's Method and adding them to the series1
+        //and points that satisfy to Euler's Method error and adding them to the series2:
         series1 = new XYSeries("Euler's Method");
         series1.add(x, y);
         series2 = new XYSeries("Euler's Method Error");
