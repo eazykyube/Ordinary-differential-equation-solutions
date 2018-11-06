@@ -8,6 +8,7 @@ public class RungeKutta implements InterfaceMethods {
     XYSeries series1;
     //Series of method's error
     XYSeries series2;
+    //Series of method's approximation error
     XYSeries series3;
 
     public void funct(Double step, Double x, Double y, Double xf){
