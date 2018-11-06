@@ -4,6 +4,7 @@ import org.jfree.chart.JFreeChart;
 import org.jfree.chart.plot.PlotOrientation;
 import org.jfree.data.xy.XYSeries;
 import org.jfree.data.xy.XYSeriesCollection;
+
 import java.awt.*;
 import java.util.LinkedList;
 
@@ -15,14 +16,14 @@ public class Chart{
 
     public Chart(){}
 
-    public void createChart(LinkedList<XYSeries> linkedList, String title){
+    public void createChart(LinkedList<XYSeries> linkedList, String title, String a, String b){
         //Adding each series of points into the series collection:
         dataset = new XYSeriesCollection();
         while(linkedList.isEmpty()==false)
             dataset.addSeries(linkedList.pop());
         //Creating chart using series collection:
         chart = ChartFactory
-                .createXYLineChart(title, "x", "y",
+                .createXYLineChart(title, a, b,
                         dataset,
                         PlotOrientation.VERTICAL,
                         true, true, true);
@@ -31,6 +32,6 @@ public class Chart{
         //Tuning chart panel settings:
         Zoom zoom = new Zoom();
         zoom.addListener(chartPanel);
-        chartPanel.setSize(new Dimension(500, 220));
+        chartPanel.setSize(new Dimension(680, 420));
     }
 }
